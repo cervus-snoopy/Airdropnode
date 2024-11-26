@@ -97,7 +97,7 @@ fi
 # Menjalankan perintah Docker
 echo -e "\n${CYAN}🔄  Menjalankan Docker container dengan Private Key yang diberikan...${RESET}"
 CONTAINER_NAME="glacier-verifier"
-docker run -d -e PRIVATE_KEY=$YOUR_PRIVATE_KEY --name $CONTAINER_NAME docker.io/glaciernetwork/glacier-verifier:v0.0.1
+docker run -d -e PRIVATE_KEY=$YOUR_PRIVATE_KEY --name $CONTAINER_NAME docker.io/glaciernetwork/glacier-verifier:v0.0.2
 
 # Verifikasi apakah container berhasil dijalankan
 if [ $? -eq 0 ]; then
